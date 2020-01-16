@@ -1,0 +1,205 @@
+---
+permalink: /survey
+layout: default
+---
+
+<section class="section survey-title">
+  <h1>The Open Source Survey</h1>
+  <p>Take a 3 minute survey and help identify priorities and challenges of the open-source community.</p>
+</section>
+
+<section class="section survey">
+  <div class="question">
+    <div class="question-info">
+      <h2 class="question-text"><span class="question-index">1.</span> Do you own a GitHub account?</h2>
+    </div>
+    <div class="answers">
+      <div class="answer">
+        <input type="radio" name="GITHUB_ACC" value="yes" id="github-acc-yes" checked>
+        <label for="github-acc-yes">Yes</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="GITHUB_ACC" value="no" id="github-acc-no">
+        <label for="github-acc-no">No</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-info">
+      <h2 class="question-text"><span class="question-index">2.</span> What is your involvement with open-source?</h2>
+      <div class="question-desc">Check all that apply</div>
+    </div>
+    <div class="answers">
+      <div class="answer">
+        <input type="checkbox" name="OSS_INVOLVEMENT[]" value="owner" id="oss-involvement-owner">
+        <label for="oss-involvement-owner">I own one or more open-source project</label>
+      </div>
+
+      <div class="answer">
+        <input type="checkbox" name="OSS_INVOLVEMENT[]" value="maintainer" id="oss-involvement-maintainer">
+        <label for="oss-involvement-maintainer">I'm an active maintainer of one or more open-source projects</label>
+      </div>
+
+      <div class="answer">
+        <input type="checkbox" name="OSS_INVOLVEMENT[]" value="contributing" id="oss-involvement-contributing">
+        <label for="oss-involvement-contributing">I'm an occasional contributor to one or more open-source projects (PRs, issues, wiki...)</label>
+      </div>
+
+      <div class="answer">
+        <input type="checkbox" name="OSS_INVOLVEMENT[]" value="looking-for-more" id="oss-involvement-looking-for-more">
+        <label for="oss-involvement-looking-for-more">I'm always looking for new open-source projects to contribute to</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-info">
+      <h2 class="question-text"><span class="question-index">3.</span> How often do you work on open-source/personal projects?</h2>
+    </div>
+    <div class="answers">
+      <div class="answer">
+        <input type="radio" name="FREQUENCY" value="daily" id="frequency-daily" checked>
+        <label for="frequency-daily">Daily</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="FREQUENCY" value="weekly" id="frequency-weekly">
+        <label for="frequency-weekly">Weekly</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="FREQUENCY" value="monthly" id="frequency-monthly">
+        <label for="frequency-monthly">Monthly</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="FREQUENCY" value="quarterly" id="frequency-quarterly">
+        <label for="frequency-quarterly">Quarterly</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="FREQUENCY" value="never" id="frequency-never">
+        <label for="frequency-never">Never</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-info">
+      <h2 class="question-text"><span class="question-index">4.</span> Ideally, how much time would you want to work each week on open-source/personal projects?</h2>
+    </div>
+    <div class="answers">
+      <div class="answer">
+        <input type="radio" name="WEEKLY_HOURS" value="none" id="weekly-hours-none" checked>
+        <label for="weekly-hours-none">None</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="WEEKLY_HOURS" value="1-2" id="weekly-hours-1-2">
+        <label for="weekly-hours-1-2">1-2 hours</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="WEEKLY_HOURS" value="3-5" id="weekly-hours-3-5">
+        <label for="weekly-hours-3-5">3-5 hours</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="WEEKLY_HOURS" value="6-10" id="weekly-hours-6-10">
+        <label for="weekly-hours-6-10">6-10 hours</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="WEEKLY_HOURS" value="21-40" id="weekly-hours-21-40">
+        <label for="weekly-hours-21-40">21-40 hours</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="WEEKLY_HOURS" value="40+" id="weekly-hours-40+">
+        <label for="weekly-hours-40+">Over 40 hours</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-info">
+      <h2 class="question-text"><span class="question-index">5.</span> How are your current open-source/personal projects funded?</h2>
+      <div class="question-desc">Check all that apply</div>
+    </div>
+    <div class="answers">
+      <div class="answer">
+        <input type="checkbox" name="FUNDING" value="job" id="funding-job">
+        <label for="funding-job">I subsidize my work with income unrelated to open-source</label>
+      </div>
+
+      <div class="answer">
+        <input type="checkbox" name="FUNDING" value="crowdfunding-donations" id="funding-donations">
+        <label for="funding-donations">Crowdfunding & donations</label>
+      </div>
+
+      <div class="answer">
+        <input type="checkbox" name="FUNDING" value="advertising-sponsorships" id="funding-advertising">
+        <label for="funding-advertising">Advertising & sponsorships</label>
+      </div>
+
+      <div class="answer">
+        <input type="checkbox" name="FUNDING" value="addons" id="funding-addons">
+        <label for="funding-addons">Proprietary add-ons</label>
+      </div>
+
+      <div class="answer">
+        <input type="checkbox" name="FUNDING" value="dual-licencing" id="funding-dual-licencing">
+        <label for="funding-dual-licencing">Dual licensing</label>
+      </div>
+
+      <div class="answer">
+        <input type="checkbox" name="FUNDING" value="none" id="funding-none">
+        <label for="funding-none">No funding</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-info">
+      <h2 class="question-text"><span class="question-index">6.</span> Did you recently abandon or neglect a personal project due to a lack of time and/or funding?</h2>
+    </div>
+    <div class="answers">
+      <div class="answer">
+        <input type="radio" name="ABANDON" value="yes" id="abandon-yes" checked>
+        <label for="abandon-yes">Yes</label>
+      </div>
+
+      <div class="answer">
+        <input type="radio" name="ABANDON" value="no" id="abandon-no">
+        <label for="abandon-no">No</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-info">
+      <h2 class="question-text"><span class="question-index">7.</span> [OPTIONAL] What is your GitHub username?</h2>
+    </div>
+    <div class="answers">
+      <div class="answer">
+        <input type="text" title="Enter GitHub username" placeholder="Enter GitHub username" name="EMAIL">
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-info">
+      <h2 class="question-text"><span class="question-index">8.</span> [OPTIONAL] What is your email address?</h2>
+      <div class="question-desc">We will use this email address to notify you once the results are available.</div>
+    </div>
+    <div class="answers">
+      <div class="answer">
+        <input type="text" title="Enter email address" placeholder="Enter email address" name="EMAIL">
+      </div>
+    </div>
+  </div>
+
+  <button class="survey-submit">Submit my answers</button>
+</section>
