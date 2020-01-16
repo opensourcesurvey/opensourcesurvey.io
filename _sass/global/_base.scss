@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  font-variant-ligatures: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-shadow: rgba($black, 0.01) 0 0 1px;
+  font-family: $overpass;
+  color: $black;
+  font-size: 1.125rem;
+  background-color: $gray-light;
+
+  &.show {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6;
+  margin: 1rem 0;
+}

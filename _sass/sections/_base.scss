@@ -1,0 +1,31 @@
+.section {
+  padding: 4rem 2rem;
+
+  @include breakpoint(tablet) {
+    padding: 6rem 4rem;
+  }
+
+  &-content {
+    max-width: 45rem;
+    margin: 0 auto;
+
+    p {
+      font-size: 1.125rem;
+    }
+  }
+
+  &-title {
+    color: $gray;
+    font-size: 48px;
+    opacity: 0.25;
+    line-height: 1;
+
+    @include breakpoint(tablet) {
+      font-size: 72px;
+    }
+  }
+
+  &.privacy {
+    background-color: $white;
+  }
+}

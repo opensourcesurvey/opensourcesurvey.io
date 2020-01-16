@@ -1,0 +1,138 @@
+.survey-title {
+  text-align: center;
+
+  p {
+    max-width: 30rem;
+    margin: 1rem auto 0;
+  }
+}
+
+.survey {
+  padding-bottom: 10rem;
+
+  .question {
+    max-width: 30rem;
+    margin: 0 auto 8rem;
+
+    &-text {
+      font-size: 1.25rem;
+      margin-bottom: 0;
+    }
+
+    &-info {
+      margin-bottom: 2rem;
+    }
+
+    &-desc {
+      color: $gray;
+      font-size: .875rem;
+    }
+  }
+
+  .answer {
+
+    label {
+      position: relative;
+      display: block;
+      cursor: pointer;
+      padding: .75rem 3.5rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      background-color: $gray-light;
+      line-height: 1.4;
+      font-weight: 700;
+      box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+        inset 0 0 20px rgba(255, 255, 255, 0),
+        7px 7px 15px rgba(55, 84, 170, .15),
+        -7px -7px 20px rgba(255, 255, 255, 1),
+        inset 0px 0px 4px rgba(255, 255, 255, .2);
+    }
+
+    input[type='text'],
+    input[type='email'] {
+      position: relative;
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      padding: .75rem 1rem;
+      font-size: .875rem;
+      border-radius: 5px;
+      background-color: transparent;
+      box-shadow: inset 3px 3px 7px rgba(177, 192, 206, 0.48), inset -3px -3px 7px $white;
+      border: 0;
+      outline: none;
+    }
+
+    input[type='radio'],
+    input[type='checkbox'] {
+      display: none;
+
+      & + label {
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          left: 1.5rem;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &::before {
+          width: 16px;
+          height: 16px;
+          border: 2px solid $blue;
+        }
+
+        &::after {
+          background-color: $blue;
+          width: 8px;
+          height: 8px;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+      }
+
+      &:checked + label {
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    input[type='radio'] {
+
+      & + label {
+
+        &::before,
+        &::after {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &-submit {
+    appearance: none;
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    border: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: .75rem 3.5rem;
+    background-color: $gray-light;
+    color: $blue;
+    box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+      inset 0 0 20px rgba(255, 255, 255, 0),
+      7px 7px 15px rgba(55, 84, 170, .15),
+      -7px -7px 20px rgba(255, 255, 255, 1),
+      inset 0px 0px 4px rgba(255, 255, 255, .2);
+  }
+}
