@@ -11,6 +11,12 @@ $gray: #686787;
 $gray-light: #f1f3f6;
 
 // Shadows
-$shadow: 0 4px 24px 0 rgba($black, 0.08);
+$card-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+  inset 0 0 20px rgba(255, 255, 255, 0),
+  7px 7px 15px rgba(55, 84, 170, .15),
+  -7px -7px 20px rgba(255, 255, 255, 1),
+  inset 0px 0px 4px rgba(255, 255, 255, .2);
+
+$input-shadow: inset 3px 3px 7px rgba(177, 192, 206, 0.48), inset -3px -3px 7px $white;
 
 $easing: cubic-bezier(0.445, 0.05, 0.55, 0.95);

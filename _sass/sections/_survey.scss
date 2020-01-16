@@ -42,11 +42,7 @@
       background-color: $gray-light;
       line-height: 1.4;
       font-weight: 700;
-      box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
-        inset 0 0 20px rgba(255, 255, 255, 0),
-        7px 7px 15px rgba(55, 84, 170, .15),
-        -7px -7px 20px rgba(255, 255, 255, 1),
-        inset 0px 0px 4px rgba(255, 255, 255, .2);
+      box-shadow: $card-shadow;
     }
 
     input[type='text'],
@@ -59,7 +55,7 @@
       font-size: .875rem;
       border-radius: 5px;
       background-color: transparent;
-      box-shadow: inset 3px 3px 7px rgba(177, 192, 206, 0.48), inset -3px -3px 7px $white;
+      box-shadow: $input-shadow;
       border: 0;
       outline: none;
     }
@@ -129,10 +125,7 @@
     padding: .75rem 3.5rem;
     background-color: $gray-light;
     color: $blue;
-    box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
-      inset 0 0 20px rgba(255, 255, 255, 0),
-      7px 7px 15px rgba(55, 84, 170, .15),
-      -7px -7px 20px rgba(255, 255, 255, 1),
-      inset 0px 0px 4px rgba(255, 255, 255, .2);
+    box-shadow: $card-shadow;
+    outline: none;
   }
 }
