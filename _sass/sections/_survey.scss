@@ -2,10 +2,26 @@
   border-top: 1.5rem solid $blue-dark;
   text-align: center;
 
-  h1,
-  p {
+  &-content {
+    position: relative;
+    padding: 1rem;
     max-width: 30rem;
-    margin: 1rem auto;
+    margin: 0 auto;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 150px;
+      height: 5px;
+      background-color: $blue-dark;
+      transform: translateX(-50%);
+    }
+  }
+
+  p {
+    margin: 1rem 0;
   }
 }
 
