@@ -30,6 +30,9 @@ markdown: kramdown
 sass:
   style: compressed
 
+plugins:
+- jekyll-autoprefixer
+
 survey_submit_url: https://4ewtaicfa5.execute-api.us-east-1.amazonaws.com/opensourcesurvey_submit
 
 # Exclude from processing.
