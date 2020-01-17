@@ -15,10 +15,16 @@ body {
   color: $black;
   font-size: 1.125rem;
   background-color: $gray-light;
+  display: flex;
+  flex-direction: column;
 
   &.show {
     overflow: hidden;
   }
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1,
