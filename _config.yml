@@ -30,6 +30,8 @@ markdown: kramdown
 sass:
   style: compressed
 
+survey_submit_url: https://4ewtaicfa5.execute-api.us-east-1.amazonaws.com/opensourcesurvey_submit
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
