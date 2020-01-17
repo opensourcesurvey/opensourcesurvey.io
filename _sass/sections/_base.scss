@@ -16,13 +16,6 @@
 
   &-title {
     color: $gray;
-    font-size: 48px;
-    opacity: 0.25;
-    line-height: 1;
-
-    @include breakpoint(tablet) {
-      font-size: 72px;
-    }
   }
 
   &.privacy {
