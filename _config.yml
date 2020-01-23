@@ -5,7 +5,7 @@ description: Take a 3-minute survey to identify priorities and challenges of the
 twitter_handle: "@osssurvey"
 
 baseurl: ""
-url: ""
+url: "https://opensourcesurvey.io"
 
 markdown: kramdown
 
