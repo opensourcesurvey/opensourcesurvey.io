@@ -81,5 +81,10 @@
     margin-bottom: 2rem;
     border: 2px solid $white;
     max-width: 490px;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
   }
 }
